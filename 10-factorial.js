@@ -1,7 +1,7 @@
 // Get the first argument and convert to integer
 const num = parseInt(process.argv[2], 10);
 
-// Recursive function to compute factorial
+// Recursive factorial function
 function factorial(n) {
     if (isNaN(n) || n <= 1) {
         return 1;
@@ -9,5 +9,5 @@ function factorial(n) {
     return n * factorial(n - 1);
 }
 
-// Print the factorial of the input number
+// Print the result
 console.log(factorial(num));
