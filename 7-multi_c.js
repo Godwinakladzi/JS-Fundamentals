@@ -1,9 +1,11 @@
 const times = parseInt(process.argv[2], 10);
 
-if (isNaN(times) || times < 1) {
+if (isNaN(times)) {
     console.log("Missing number of occurrences");
 } else {
-    for (let i = 0; i < times; i++) {
+    let i = 0;
+    while (i < times) {
         console.log("C is fun");
+        i++;
     }
 }
